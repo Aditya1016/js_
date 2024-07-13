@@ -17,3 +17,7 @@ const myFunction = function(){
 } 
 
 console.log(typeof bigNumber);
+
+// ********************************************** //
+
+let myYoutubeName = "hiteshchoudharydotcom"
