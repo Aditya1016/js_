@@ -51,10 +51,10 @@ function handleObject(anyObject){
 }
 
 // handleObject(user)
-handleObject({
-    username: "sam",
-    price: 399
-})
+// handleObject({
+//     username: "sam",
+//     price: 399
+// })
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
@@ -62,3 +62,4 @@ function returnSecondValue(getArray){
 }
 
 console.log(returnSecondValue(myNewArray));
+
