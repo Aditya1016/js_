@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html events</title>
+</head>
+<body>
+    <ul>
+        <li id="owl">Owl</li>
+    </ul>
+</body>
+<script>
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e);
+    //     e.stopPropagation();
+    //     e.preventDefault();
+    // }, false)
+
+
+     
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    })
+
+</script>
+</html>
